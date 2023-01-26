@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s;
+    text-transform: capitalize;
+}
+body {
+    height: 100vh;
+    background-color: #005e00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invaild{
+    font-size: 1.2rem;
+    color: #f00;
+}
+section.main {
+    width: 50vw;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.3rem;
+    padding: 2rem;
+    position: relative;
+}
+section.main  p {
+    font-size: 2rem;
+    margin: 0 auto;
+}
+section.main  p i {
+    color: #0d990d;
+}
+section.main .inner {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+section.main .inner div{
+    width: 100%;
+}
+section.main .inner div input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding-left: 1rem;
+}
+section.main .inner div input::placeholder{
+    color: rgba(0, 0, 0, 0.74);
+}
+section.main button {
+    padding: 1rem 5rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: #0d990d;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+section.main button:hover {
+    background-color: #0d990dab;
+}
+section.main section.pageOne{
+    width: 50vw;
+    height: 70vh;
+    background-color: #005e00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0px 100%);
+}
+section.main section.pageOne.active{
+    clip-path: polygon(0px 0px, 100% 0%, 100% 0px, 0px 0px);
+}
+section.main section.pageOne button {
+    color: #000;
+}

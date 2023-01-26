@@ -1,0 +1,14 @@
+{
+  "name": "airtime",
+  "version": "1.0.0",
+  "description": "buyairtime",
+  "main": "brain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nickiscott",
+  "license": "ISC",
+  "dependencies": {
+    "africastalking": "^0.5.7"
+  }
+}
