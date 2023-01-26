@@ -12,6 +12,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+.success{
+    color: #0d990d;
+    font-size: 1.3rem;
+    display: none;
+}
 .invaild{
     font-size: 1.2rem;
     color: #f00;

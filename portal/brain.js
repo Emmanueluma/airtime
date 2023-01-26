@@ -8,8 +8,10 @@ const one = document.getElementById('one')
 const btn = document.getElementById('btn');
 const amount = document.getElementById('amount');
 const phoneNumber = document.getElementById('phoneNumber');
+let success = document.querySelector('.success');
+let nn = document.getElementById('nn')
 btn.addEventListener('click', e =>{
-        // Set your app credentials
+        /* // Set your app credentials
         const credentials = {
             apiKey: '51a01d34c0c7121f237cb06a896daed8ad2585b4be794d8a62cac6ce75735bea',
             username: 'nickiscott',
@@ -40,7 +42,12 @@ btn.addEventListener('click', e =>{
         }
 
         sendAirtime();
-        console.log(1)
+        console.log(1) */
+        setTimeout(e => {
+            success.style.display = 'block'
+            nn.innerText = phoneNumber.value;
+        },2000)
+
 })
 
 
